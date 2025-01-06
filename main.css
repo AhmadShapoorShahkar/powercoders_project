@@ -1,0 +1,445 @@
+html{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+}
+
+
+header{
+    background: url(./img_source/header_background.jpg);
+    max-height: 100px;
+    background-size: contain;
+    background-repeat: repeat;
+    color: rgb(215, 150, 29);
+    margin: 0;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 52px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+
+/*-------------------------------------------------------------------------------*/
+
+nav{
+    background-color: blue;
+    padding: 0;
+    display: flex;
+
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+.nav_btn a{
+    background-color: rgb(215, 150, 29);
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 5px 2px;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.nav_btn a:hover{
+    opacity: 0.8;
+}
+
+
+/*-------------------------------------------------------------------------------*/
+
+.welcome_h2{
+    display: flex;
+    padding: 10px 20px;
+}
+.welcome_p{
+    padding: 10px 5px;
+    
+}
+
+.welcome_img{
+    height: 300px;
+    width: 300px;
+    padding: 10px 10px;
+}
+/*-------------------------------------------------------------------------------*/
+
+.source{
+    margin-right: 10px;
+}
+
+h4{
+    background-color: rgb(215, 150, 29);
+    padding: 5px 5px;
+}
+/*-------------------------------------------------------------------------------*/
+
+.video_container{
+    display: block;
+    columns: 2;
+    overflow: hiddens;
+}
+iframe{
+    width: 560px;
+    height: 315px;
+    margin: 5px 5px;
+}
+/*-------------------------------------------------------------------------------*/
+.logo_container{
+    padding: 20px 20px;
+    display: block;
+    columns: 2;
+    justify-items: center;
+}
+
+.logo_heading{
+    padding-left: 20px;
+}
+
+.logo_text{
+    text-align: justify;
+}
+
+.logo{
+    display: flex;
+    width: 400px;
+    height: 200px;
+
+}
+
+
+/*-------------------------------------------------------------------------------*/
+form{
+    margin-left: 20px;
+}
+
+.form_heading{
+    padding-left: 20px;
+}
+
+#submit_btn{
+    background-color: blue;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    opacity: 1;
+}
+#submit_btn:hover{
+    opacity: 0.5;
+}
+/*-------------------------------------------------------------------------------*/
+
+footer{
+    background-color: rgb(209, 196, 196);
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*iPhone SE, XR, 12Pro and 14Pro Max! and pixel 7, Galaxy S8+, Galaxy S20 */
+@media (min-width: 375px) and (max-width: 667px) {
+    .video_container{
+        display: block;
+        columns: 2;
+        overflow: hiddens;
+    }
+    iframe{
+        width: 160px;
+        height: 90px;
+        margin: 5px 5px;
+    }
+    .nav_btn a{
+        background-color: rgb(215, 150, 29);
+        cursor: pointer;
+        padding: 10px 10px;
+        margin-right: 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .logo_text{
+        text-align: justify;
+    }
+    .logo{
+        height: 100px;
+        width: 320px;
+    }
+
+    .logo_container{
+        padding: 20px 20px;
+        columns: auto;
+    }
+}
+
+/*-------------------------------------------------------------------------------*/
+/* iPad Mini, */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .welcome_p{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .welcome_img{
+        width: 400px;
+        height: 300px;
+        margin-top: 40px;
+    }
+    .source{
+        padding: 20px 20px;
+        line-height: 50px;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+    .video_container{
+        display: block;
+        columns: 2;
+        overflow: hiddens;
+    }
+
+    iframe{
+        width: 350px;
+        height: 200px;
+        margin: 5px 5px;
+    }
+
+    .nav_btn a{
+        background-color: rgb(215, 150, 29);
+        cursor: pointer;
+        padding: 10px 10px;
+        margin-right: 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .logo_text{
+        text-align: justify;
+    }
+    .logo{
+        height: 100px;
+        width: 320px;
+    }
+
+    .logo_container{
+        padding: 20px 20px;
+        columns: auto;
+    }
+}
+
+/*-------------------------------------------------------------------------------*/
+/* iPad Air, Surface pro 7, Surface Duo, */
+
+@media (min-width: 820px ) and (max-width: 1080px){
+    .welcome_p{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .welcome_img{
+        width: 400px;
+        height: 300px;
+        margin-top: 40px;
+    }
+    .source{
+        padding: 20px 20px;
+        line-height: 50px;
+    }
+    .source_container{
+        padding: 20px 20px;
+    }
+
+    footer{
+        position: relative;
+        margin-top: 350px;
+    }
+
+    .video_container{
+        display: block;
+        columns: 2;
+        overflow: hiddens;
+    }
+
+    iframe{
+        width: 350px;
+        height: 200px;
+        margin: 5px 5px;
+    }
+
+    nav{
+        background-color: midnightblue;
+        padding: 10px 10px;
+        display: flex;
+    
+    }
+
+    .nav_btn a{
+        background-color: rgb(215, 150, 29);
+        cursor: pointer;
+        padding: 15px 15px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .logo_text{
+        text-align: justify;
+    }
+    .logo{
+        height: 100px;
+        width: 320px;
+    }
+
+    .logo_container{
+        padding: 20px 20px;
+        columns: auto;
+    }
+}
+
+/*-------------------------------------------------------------------------------*/
+/* Galaxy Z Fold 5, */
+
+@media (min-width: 344px) and (max-width: 882px) {
+    .welcome_p{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .welcome_img{
+        width: 400px;
+        height: 300px;
+        margin-top: 40px;
+    }
+    .source{
+        padding: 20px 20px;
+        line-height: 50px;
+    }
+    .source_container{
+        padding: 20px 20px;
+    }
+
+    footer{
+        position: relative;
+        margin-top: 350px;
+    }
+
+    .video_container{
+        display: block;
+        columns: 1;
+        overflow: hiddens;
+    }
+
+    iframe{
+        width: 300px;
+        height: 150px;
+        margin: 5px 5px;
+    }
+
+    nav{
+        background-color: midnightblue;
+        padding: 0 0;
+        display: flex;
+    
+    }
+
+    .nav_btn a{
+        background-color: rgb(215, 150, 29);
+        cursor: pointer;
+        padding: 10px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .logo_text{
+        text-align: justify;
+    }
+    .logo{
+        height: 100px;
+        width: 320px;
+    }
+
+    .logo_container{
+        padding: 20px 20px;
+        columns: auto;
+    }
+}
+
+/*-------------------------------------------------------------------------------*/
+/* Asus Zenbook Fold, */
+
+@media (min-width: 853px) and (max-width: 1280px) {
+    .welcome_p{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .welcome_img{
+        width: 400px;
+        height: 300px;
+        margin-top: 40px;
+    }
+    .source{
+        padding: 20px 20px;
+        line-height: 50px;
+    }
+    .source_container{
+        padding: 20px 20px;
+    }
+
+    footer{
+        position: relative;
+        margin-top: 350px;
+    }
+
+    .video_container{
+        display: block;
+        columns: 2;
+        overflow: hiddens;
+    }
+
+    iframe{
+        width: 300px;
+        height: 150px;
+        margin: 5px 5px;
+    }
+
+    nav{
+        background-color: midnightblue;
+        padding: 0 0;
+        display: flex;
+    
+    }
+
+    .nav_btn a{
+        background-color: rgb(215, 150, 29);
+        cursor: pointer;
+        padding: 10px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .logo_text{
+        text-align: justify;
+    }
+    .logo{
+        height: 100px;
+        width: 320px;
+    }
+
+    .logo_container{
+        padding: 20px 20px;
+        columns: auto;
+    }
+}
