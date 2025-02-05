@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBank</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>CodeBank</header>
+    <div id="signup_container">
+        <h3>Sign-up!</h3>
+        <form action="./login.html" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="name">
+            <br>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="lastName">
+            <br>
+            <label for="age">Age</label>
+            <input type="date" id="age" name="age" placeholder="age">
+            <br>
+            <label for="nationality">Nationality</label>
+            <select title="select a countery">
+                <option value="-- Select --">-- Select --</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Canada">Canada</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Germany">Germany</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+            </select>
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" value="male" id="male" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" value="female" id="female" name="gender">
+            <label for="others">Others</label>
+            <input type="radio" value="others" id="others" name="gender">
+            <br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="example@example.come">
+            <br>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="+41xxxxxxxx">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password">
+            <br>
+            <label for="repeat_pas">Repeat Password</label>
+            <input type="repeat_pas" id="repeat_pas" name="repeat_pas" placeholder="repeat password">
+            <br>
+            <p>Already have an account click here to <a href="./login.html">login</a>!</p>
+            <br>
+            <input id="submit_btn" type="submit" value="Submit">
+            <br>
+            <br>
+        </form>
+    </div>
+</body>
+</html>

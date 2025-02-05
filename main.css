@@ -25,7 +25,7 @@ header{
 
 nav{
     background-color: blue;
-    padding: 0;
+    padding: 15px;
     display: flex;
 
 }
@@ -36,27 +36,45 @@ nav ul li{
 
 .nav_btn a{
     background-color: rgb(215, 150, 29);
+    color: white;
     cursor: pointer;
     padding: 10px 20px;
     margin-right: 10px;
     border-radius: 25px;
     border: 0;
-    box-shadow: 5px 2px;
+    box-shadow: 2px 2px;
     font-weight: bold;
     text-decoration: none;
     opacity: 1;
+}
+
+/* Logout btn is in the navbar but due to some styles it seperated the styling! */
+.Logout_btn a{
+    color: white;
+    cursor: pointer;
+    padding: 25px 7px;
+    margin-left: 900px;
+    border-radius: 50px 50px;
+    border: 0;
+    box-shadow: 3px 3px;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.Logout_btn a:hover{
+    color: red;
 }
 
 .nav_btn a:hover{
     opacity: 0.8;
 }
 
-
 /*-------------------------------------------------------------------------------*/
 
 .welcome_h2{
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 .welcome_p{
     padding: 10px 5px;
@@ -69,15 +87,27 @@ nav ul li{
     padding: 10px 10px;
 }
 /*-------------------------------------------------------------------------------*/
+.source_contents{
+    display:inline-block;
+    columns: 6 2;
+    margin-left: 5px;
+
+}
 
 .source{
-    margin-right: 10px;
+    padding: 10px;
+}
+
+h3{
+    padding-left: 15px;
 }
 
 h4{
     background-color: rgb(215, 150, 29);
     padding: 5px 5px;
 }
+
+
 /*-------------------------------------------------------------------------------*/
 
 .video_container{
@@ -112,9 +142,21 @@ iframe{
     height: 200px;
 
 }
+/*--------------------------------signup.html form-----------------------------------------------*/
+
+#signup_container{
+    max-width: 30%;
+    padding: 10px 10px;
+    margin: 5% 30%;
+    line-height: 2;
+    border: 1px solid;
+    border-radius: 25px;
+    box-shadow: 3px 5px;
+    border-color: darkgray;
+}
 
 
-/*-------------------------------------------------------------------------------*/
+/*---------------------------about.html form-------------------------------------------*/
 form{
     margin-left: 20px;
 }
@@ -134,6 +176,41 @@ form{
 #submit_btn:hover{
     opacity: 0.5;
 }
+
+/*--------------------------login.html from----------------------------------------*/
+
+
+.login_container_P_form{
+display: flex;
+gap: 15%;
+margin: 5% 5%;
+}
+
+.login_P, .login_form{
+    width: 40%;
+    padding: 5px;
+}
+
+.login_P{
+    text-align: justify;
+    line-height: 30px;
+}
+
+.login_form{
+    max-width: 30%;
+    border: 1px solid;
+    border-radius: 25px;
+    box-shadow: 2px 3px;
+    line-height: 30px;
+
+}
+
+.login_h2{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+
 /*-------------------------------------------------------------------------------*/
 
 footer{
@@ -144,6 +221,9 @@ footer{
     margin-top: 20px;
     font-family: sans-serif;
 }
+
+
+
 
 /*-------------------------------------------------------------------------------*/
 /*iPhone SE, XR, 12Pro and 14Pro Max! and pixel 7, Galaxy S8+, Galaxy S20 */
