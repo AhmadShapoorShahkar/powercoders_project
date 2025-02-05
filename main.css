@@ -1,20 +1,10 @@
-html{
-    font-family: sans-serif;
-    font-size: 16px;
-    margin: 0;
-    width: 100%;
-}
-
-
 header{
     background: url(./img_source/header_background.jpg);
-    max-height: 100px;
+    max-width: 100%;
     background-size: contain;
     background-repeat: repeat;
     color: rgb(215, 150, 29);
-    margin: 0;
     text-align: center;
-    padding: 20px 20px;
     font-size: 52px;
     font-family: sans-serif;
     font-weight: bolder;
@@ -24,8 +14,8 @@ header{
 /*-------------------------------------------------------------------------------*/
 
 nav{
+    max-width: 100%;
     background-color: blue;
-    padding: 15px;
     display: flex;
 
 }
@@ -34,12 +24,18 @@ nav ul li{
     display: inline-block;
 }
 
+.nav_btn{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
 .nav_btn a{
+
     background-color: rgb(215, 150, 29);
     color: white;
     cursor: pointer;
-    padding: 10px 20px;
     margin-right: 10px;
+    padding: 15px 20px;
     border-radius: 25px;
     border: 0;
     box-shadow: 2px 2px;
@@ -48,16 +44,20 @@ nav ul li{
     opacity: 1;
 }
 
-/* Logout btn is in the navbar but due to some styles it seperated the styling! */
+/* Logout btn is in the navbar but due to some styles it is seperated the styling! */
+.Logout_btn{
+    margin-bottom: 15px;
+    margin-left: 940px;
+    padding: 5px 5px;
+}
+
 .Logout_btn a{
     color: white;
     cursor: pointer;
     padding: 25px 7px;
-    margin-left: 900px;
     border-radius: 50px 50px;
     border: 0;
     box-shadow: 3px 3px;
-    font-weight: bold;
     text-decoration: none;
     opacity: 1;
 }
@@ -218,8 +218,9 @@ footer{
     color: white;
     text-align: center;
     padding: 20px 20px;
-    margin-top: 20px;
     font-family: sans-serif;
+    margin-top: 5px;
+    align-content: baseline;
 }
 
 
@@ -228,6 +229,25 @@ footer{
 /*-------------------------------------------------------------------------------*/
 /*iPhone SE, XR, 12Pro and 14Pro Max! and pixel 7, Galaxy S8+, Galaxy S20 */
 @media (min-width: 375px) and (max-width: 667px) {
+
+
+    .welcome_h2{
+        display: flex;
+        padding: 10px 10px;
+    }
+    .welcome_p{
+        padding: 10px 5px;
+        
+    }
+    
+    .welcome_img{
+        height: 200px;
+        width: 200px;
+        padding: 10px 10px;
+    }
+    
+    
+    
     .video_container{
         display: block;
         columns: 2;
@@ -238,6 +258,13 @@ footer{
         height: 90px;
         margin: 5px 5px;
     }
+    
+    .nav_btn{
+        padding: 0;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
     .nav_btn a{
         background-color: rgb(215, 150, 29);
         cursor: pointer;
@@ -248,6 +275,11 @@ footer{
         font-size: 12px;
         text-decoration: none;
     }
+    .Logout_btn{
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
     .logo_text{
         text-align: justify;
     }
@@ -260,6 +292,48 @@ footer{
         padding: 20px 20px;
         columns: auto;
     }
+
+    .login_container_P_form{
+        display: inline-block;
+        margin: 5% 5%;
+        }
+        
+        .login_P, .login_form{
+            width: 90%;
+            padding: 5px;
+        }
+        
+        .login_P{
+            text-align: justify;
+            line-height: 20px;
+        }
+        
+        .login_form{
+            max-width: 90%;
+            border: 1px solid;
+            border-radius: 5px;
+            box-shadow: 2px 3px;
+            line-height: 25px;
+        
+        }
+        
+        .login_h2{
+            text-align: center;
+            padding: 10px 10px;
+        }
+
+        #signup_container{
+            max-width: 90%;
+            padding: 10px 10px;
+            margin: 5% 5%;
+            line-height: 2;
+            border: 1px solid;
+            border-radius: 25px;
+            box-shadow: 3px 5px;
+            border-color: darkgray;
+        }
+
+
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -296,6 +370,12 @@ footer{
         margin: 5px 5px;
     }
 
+    .nav_btn{
+        padding: 0;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
     .nav_btn a{
         background-color: rgb(215, 150, 29);
         cursor: pointer;
@@ -303,9 +383,15 @@ footer{
         margin-right: 10px;
         border-radius: 25px;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 12px;
         text-decoration: none;
     }
+    .Logout_btn{
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    
     .logo_text{
         text-align: justify;
     }
@@ -318,10 +404,38 @@ footer{
         padding: 20px 20px;
         columns: auto;
     }
+    .login_container_P_form{
+        display: inline-block;
+        margin: 5% 5%;
+        }
+        
+        .login_P, .login_form{
+            width: 90%;
+            padding: 5px;
+        }
+        
+        .login_P{
+            text-align: justify;
+            line-height: 20px;
+        }
+        
+        .login_form{
+            max-width: 90%;
+            border: 1px solid;
+            border-radius: 5px;
+            box-shadow: 2px 3px;
+            line-height: 25px;
+        
+        }
+        
+        .login_h2{
+            text-align: center;
+            padding: 10px 10px;
+        }
 }
 
 /*-------------------------------------------------------------------------------*/
-/* iPad Air, Surface pro 7, Surface Duo, */
+/* iPad Air, Surface pro 7 */
 
 @media (min-width: 820px ) and (max-width: 1080px){
     .welcome_p{
@@ -329,7 +443,134 @@ footer{
         padding: 10px 10px;
     }
     .welcome_img{
-        width: 400px;
+        width: 800px;
+        height: 500px;
+        margin-top: 40px;
+    }
+    .source{
+        padding: 20px 20px;
+        line-height: 50px;
+    }
+    .source_container{
+        padding: 20px 20px;
+    }
+
+    footer{
+        position: relative;
+        margin-top: 350px;
+    }
+
+    .video_container{
+        display: block;
+        columns: 2;
+        overflow: hiddens;
+    }
+
+    iframe{
+        width: 350px;
+        height: 200px;
+        margin: 5px 5px;
+    }
+
+    nav{
+        background-color: midnightblue;
+        padding: 10px 10px;
+        display: flex;
+    
+    }
+
+    .nav_btn{
+        padding: 0;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    .nav_btn a{
+        background-color: rgb(215, 150, 29);
+        cursor: pointer;
+        padding: 5px 5px;
+        margin-right: 5px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .Logout_btn a{
+        color: white;
+        cursor: pointer;
+        padding: 10px 3px;
+        border-radius: 50px 50px;
+        border: 0;
+        box-shadow: 3px 3px;
+        text-decoration: none;
+        font-size: 15px;
+        opacity: 1;
+    }
+    
+    .Logout_btn a:hover{
+        color: red;
+    }
+    .Logout_btn{
+        margin-bottom: 15px;
+        margin-left: 300px;
+        margin-top: -10px;
+    }
+
+
+    .logo_text{
+        text-align: justify;
+    }
+    .logo{
+        height: 100px;
+        width: 320px;
+    }
+
+    .logo_container{
+        padding: 20px 20px;
+        columns: auto;
+    }
+    .login_container_P_form{
+        display: inline-block;
+        margin: 5% 5%;
+        }
+        
+        .login_P, .login_form{
+            width: 90%;
+            padding: 5px;
+        }
+        
+        .login_P{
+            text-align: justify;
+            line-height: 20px;
+        }
+        
+        .login_form{
+            max-width: 90%;
+            border: 1px solid;
+            border-radius: 5px;
+            box-shadow: 2px 3px;
+            line-height: 25px;
+        
+        }
+        
+        .login_h2{
+            text-align: center;
+            padding: 10px 10px;
+        }
+}
+
+/*-------------------------------------------------------------------------------*/
+/* Surface Duo, */
+
+@media (min-width: 540px ) and (max-width: 720px){
+
+    .welcome_p{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .welcome_img{
+        width: 500px;
         height: 300px;
         margin-top: 40px;
     }
@@ -365,15 +606,45 @@ footer{
     
     }
 
+    .nav_btn{
+        padding: 0;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
     .nav_btn a{
         background-color: rgb(215, 150, 29);
         cursor: pointer;
-        padding: 15px 15px;
+        padding: 5px 5px;
+        margin-right: 5px;
         border-radius: 25px;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 12px;
         text-decoration: none;
     }
+
+    .Logout_btn a{
+        color: white;
+        cursor: pointer;
+        padding: 10px 3px;
+        border-radius: 50px 50px;
+        border: 0;
+        box-shadow: 3px 3px;
+        text-decoration: none;
+        font-size: 15px;
+        opacity: 1;
+    }
+    
+    .Logout_btn a:hover{
+        color: red;
+    }
+    .Logout_btn{
+        margin-bottom: 15px;
+        margin-left: 240px;
+        margin-top: -10px;
+    }
+
+
     .logo_text{
         text-align: justify;
     }
@@ -386,6 +657,45 @@ footer{
         padding: 20px 20px;
         columns: auto;
     }
+    .login_container_P_form{
+        display: inline-block;
+        margin: 5% 5%;
+        }
+        
+        .login_P, .login_form{
+            width: 90%;
+            padding: 5px;
+        }
+        
+        .login_P{
+            text-align: justify;
+            line-height: 20px;
+        }
+        
+        .login_form{
+            max-width: 90%;
+            border: 1px solid;
+            border-radius: 5px;
+            box-shadow: 2px 3px;
+            line-height: 25px;
+        
+        }
+        
+        .login_h2{
+            text-align: center;
+            padding: 10px 10px;
+        }
+
+    #signup_container{
+    max-width: 100%;
+    padding: 10px 10px;
+    margin: 10px 5px;
+    line-height: 2;
+    border: 1px solid;
+    border-radius: 25px;
+    box-shadow: 3px 5px;
+    border-color: darkgray;
+    }
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -397,9 +707,9 @@ footer{
         padding: 10px 10px;
     }
     .welcome_img{
-        width: 400px;
-        height: 300px;
-        margin-top: 40px;
+        max-width: 100%;
+        height: 100%;
+        margin-top: 10px;
     }
     .source{
         padding: 20px 20px;
@@ -411,7 +721,8 @@ footer{
 
     footer{
         position: relative;
-        margin-top: 350px;
+        margin-top: 10px;
+        align-content: baseline;
     }
 
     .video_container{
@@ -433,15 +744,46 @@ footer{
     
     }
 
+    .nav_btn{
+        padding: 0;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
     .nav_btn a{
         background-color: rgb(215, 150, 29);
         cursor: pointer;
-        padding: 10px 10px;
+        padding: 5px 5px;
+        margin-right: 5px;
         border-radius: 25px;
         font-weight: bold;
         font-size: 12px;
         text-decoration: none;
     }
+
+    .Logout_btn a{
+        color: white;
+        cursor: pointer;
+        padding: 15px 3px;
+        border-radius: 50px 50px;
+        border: 0;
+        box-shadow: 2px 2px;
+        text-decoration: none;
+        font-size: 12px;
+        opacity: 1;
+    }
+    
+    .Logout_btn a:hover{
+        color: red;
+    }
+    .Logout_btn{
+        margin-bottom: 15px;
+        margin-left: 220px;
+        margin-top: -10px;
+        padding-top: 0;
+    }
+
+
     .logo_text{
         text-align: justify;
     }
@@ -454,20 +796,59 @@ footer{
         padding: 20px 20px;
         columns: auto;
     }
+    .login_container_P_form{
+        display: inline-block;
+        margin: 5% 5%;
+        }
+        
+        .login_P, .login_form{
+            width: 90%;
+            padding: 5px;
+        }
+        
+        .login_P{
+            text-align: justify;
+            line-height: 20px;
+        }
+        
+        .login_form{
+            max-width: 90%;
+            border: 1px solid;
+            border-radius: 5px;
+            box-shadow: 2px 3px;
+            line-height: 25px;
+        
+        }
+        
+        .login_h2{
+            text-align: center;
+            padding: 10px 10px;
+        }
+
+        #signup_container{
+            max-width: 100%;
+            padding: 10px 10px;
+            margin: 10px 5px;
+            line-height: 2;
+            border: 1px solid;
+            border-radius: 25px;
+            box-shadow: 3px 5px;
+            border-color: darkgray;
+        }
 }
 
 /*-------------------------------------------------------------------------------*/
 /* Asus Zenbook Fold, */
 
 @media (min-width: 853px) and (max-width: 1280px) {
+
     .welcome_p{
         font-size: 20px;
         padding: 10px 10px;
     }
     .welcome_img{
-        width: 400px;
-        height: 300px;
-        margin-top: 40px;
+        max-width: 800px;
+        margin-top: 10px;
     }
     .source{
         padding: 20px 20px;
@@ -479,7 +860,8 @@ footer{
 
     footer{
         position: relative;
-        margin-top: 350px;
+        margin-top: 5px;
+        align-content: baseline;
     }
 
     .video_container{
@@ -496,20 +878,50 @@ footer{
 
     nav{
         background-color: midnightblue;
-        padding: 0 0;
+        padding-top: 10px;
         display: flex;
     
+    }
+
+    .nav_btn{
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: -20px;
+        margin-right: 10px;
+
     }
 
     .nav_btn a{
         background-color: rgb(215, 150, 29);
         cursor: pointer;
-        padding: 10px 10px;
+        padding: 10px 20px;        
         border-radius: 25px;
         font-weight: bold;
         font-size: 12px;
         text-decoration: none;
     }
+
+    .Logout_btn a{
+        color: white;
+        cursor: pointer;
+        padding: 25px 7px;
+        border-radius: 50px 50px;
+        border: 0;
+        box-shadow: 3px 3px;
+        text-decoration: none;
+        opacity: 1;
+    }
+    
+    .Logout_btn a:hover{
+        color: red;
+    }
+    .Logout_btn{
+        margin-bottom: 15px;
+        margin-left: 200px;
+        padding-top: 0;
+    }
+
+
     .logo_text{
         text-align: justify;
     }
@@ -522,4 +934,142 @@ footer{
         padding: 20px 20px;
         columns: auto;
     }
+    .login_container_P_form{
+        display: inline-block;
+        margin: 5% 5%;
+    }
+        
+    .login_P, .login_form{
+        width: 90%;
+        padding: 5px;
+    }
 }
+
+/*--------------------- Samsung galaxy A51/71 -------------------------*/
+
+@media (min-width: 412px ) and (max-width: 914px){
+
+    .welcome_p{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .welcome_img{
+        width: 800px;
+        height: 500px;
+        margin-top: 10px;
+    }
+    .source{
+        padding: 20px 20px;
+        line-height: 50px;
+    }
+    .source_container{
+        padding: 20px 20px;
+    }
+
+    footer{
+        position: relative;
+        margin-top: 10px;
+        align-content: baseline;
+    }
+
+    .video_container{
+        display: block;
+        columns: 2;
+        overflow: hiddens;
+    }
+
+    iframe{
+        width: 350px;
+        height: 200px;
+        margin: 5px 5px;
+    }
+
+    nav{
+        background-color: midnightblue;
+        padding: 10px 10px;
+        display: flex;
+    
+    }
+
+    .nav_btn{
+        padding: 0;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    .nav_btn a{
+        background-color: rgb(215, 150, 29);
+        cursor: pointer;
+        padding: 10px 10px;
+        margin-right: 5px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .Logout_btn a{
+        color: white;
+        cursor: pointer;
+        padding: 20px 3px;
+        border-radius: 50px 50px;
+        border: 0;
+        box-shadow: 3px 3px;
+        text-decoration: none;
+        font-size: 15px;
+        opacity: 1;
+    }
+    
+    .Logout_btn a:hover{
+        color: red;
+    }
+    .Logout_btn{
+        margin-bottom: 15px;
+        margin-left: 270px;
+        margin-top: -10px;
+    }
+
+
+    .logo_text{
+        text-align: justify;
+    }
+    .logo{
+        height: 100px;
+        width: 320px;
+    }
+
+    .logo_container{
+        padding: 20px 20px;
+        columns: auto;
+    }
+    .login_container_P_form{
+        display: inline-block;
+        margin: 5% 5%;
+        }
+        
+        .login_P, .login_form{
+            width: 90%;
+            padding: 5px;
+        }
+        
+        .login_P{
+            text-align: justify;
+            line-height: 20px;
+        }
+        
+        .login_form{
+            max-width: 90%;
+            border: 1px solid;
+            border-radius: 5px;
+            box-shadow: 2px 3px;
+            line-height: 25px;
+        
+        }
+        
+        .login_h2{
+            text-align: center;
+            padding: 10px 10px;
+        }
+}
+        
+    
